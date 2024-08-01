@@ -22,5 +22,25 @@ namespace Mango.Web.Service
                 Url = SD.OrderAPIBase + "/api/order/CreateOrder"
             });
         }
+
+        public async Task<ResponseDto?> CreateStripeSessionAsync(StripeRequestDto stripeRequestDto)
+        {
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = SD.ApiType.POST,
+                Data = stripeRequestDto,
+                Url = SD.OrderAPIBase + "/api/order/CreateStripeSession"
+            });
+        }
+
+        public async Task<ResponseDto?> ValidateStripeSessionAsync(int orderHeaderId)
+        {
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = SD.ApiType.POST,
+                Data = orderHeaderId,
+                Url = SD.OrderAPIBase + "/api/order/ValidateStripeSession"
+            });
+        }
     }
 }
