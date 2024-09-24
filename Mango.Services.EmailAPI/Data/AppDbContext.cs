@@ -1,7 +1,7 @@
-﻿using Mango.Services.EmailAPI.Models;
+﻿using FoodDelivery.Services.EmailAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Mango.Services.EmailAPI.Data
+namespace FoodDelivery.Services.EmailAPI.Data
 {
     public class AppDbContext : DbContext
     {

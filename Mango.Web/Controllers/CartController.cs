@@ -1,13 +1,13 @@
-﻿using Mango.Web.Models;
-using Mango.Web.Models.Dto;
-using Mango.Web.Service.IService;
-using Mango.Web.Utility;
+﻿using FoodDelivery.Web.Models;
+using FoodDelivery.Web.Models.Dto;
+using FoodDelivery.Web.Service.IService;
+using FoodDelivery.Web.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.IdentityModel.Tokens.Jwt;
 
-namespace Mango.Web.Controllers
+namespace FoodDelivery.Web.Controllers
 {
     public class CartController : Controller
     {

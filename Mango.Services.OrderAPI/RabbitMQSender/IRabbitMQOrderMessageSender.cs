@@ -1,4 +1,4 @@
-﻿namespace Mango.Services.OrderAPI.RabbitMQSender
+﻿namespace FoodDelivery.Services.OrderAPI.RabbitMQSender
 {
     public interface IRabbitMQOrderMessageSender
     {

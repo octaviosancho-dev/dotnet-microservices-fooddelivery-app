@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Mango.MessageBus\Mango.MessageBus.csproj" />
+    <ProjectReference Include="..\Mango.MessageBus\FoodDelivery.MessageBus.csproj" />
   </ItemGroup>
 
 </Project>

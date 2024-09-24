@@ -1,4 +1,4 @@
-﻿namespace Mango.Services.AuthAPI.Models.Dto
+﻿namespace FoodDelivery.Services.AuthAPI.Models.Dto
 {
     public class RegistrationRequestDto
     {

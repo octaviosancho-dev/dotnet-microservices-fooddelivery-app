@@ -1,9 +1,9 @@
-﻿using Mango.Services.RewardsAPI.Data;
-using Mango.Services.RewardsAPI.Message;
-using Mango.Services.RewardsAPI.Models;
+﻿using FoodDelivery.Services.RewardsAPI.Data;
+using FoodDelivery.Services.RewardsAPI.Message;
+using FoodDelivery.Services.RewardsAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Mango.Services.RewardsAPI.Services
+namespace FoodDelivery.Services.RewardsAPI.Services
 {
     public class RewardService : IRewardService
     {

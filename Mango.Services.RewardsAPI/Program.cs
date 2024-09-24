@@ -1,6 +1,6 @@
-using Mango.Services.RewardsAPI.Data;
-using Mango.Services.RewardsAPI.Messaging;
-using Mango.Services.RewardsAPI.Services;
+using FoodDelivery.Services.RewardsAPI.Data;
+using FoodDelivery.Services.RewardsAPI.Messaging;
+using FoodDelivery.Services.RewardsAPI.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

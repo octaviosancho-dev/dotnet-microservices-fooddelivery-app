@@ -1,6 +1,6 @@
-﻿using Mango.Services.ShoppingCartAPI.Models.Dto;
+﻿using FoodDelivery.Services.ShoppingCartAPI.Models.Dto;
 
-namespace Mango.Services.ShoppingCartAPI.Service.IService
+namespace FoodDelivery.Services.ShoppingCartAPI.Service.IService
 {
     public interface ICouponService
     {

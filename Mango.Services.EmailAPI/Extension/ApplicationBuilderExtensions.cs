@@ -1,6 +1,6 @@
-﻿using Mango.Services.EmailAPI.Messaging;
+﻿using FoodDelivery.Services.EmailAPI.Messaging;
 
-namespace Mango.Services.EmailAPI.Extension
+namespace FoodDelivery.Services.EmailAPI.Extension
 {
     public static class ApplicationBuilderExtensions
     {

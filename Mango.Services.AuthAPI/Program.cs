@@ -1,9 +1,9 @@
-using Mango.MessageBus;
-using Mango.Services.AuthAPI.Data;
-using Mango.Services.AuthAPI.Models;
-using Mango.Services.AuthAPI.RabbitMQSender;
-using Mango.Services.AuthAPI.Service;
-using Mango.Services.AuthAPI.Service.IService;
+using FoodDelivery.MessageBus;
+using FoodDelivery.Services.AuthAPI.Data;
+using FoodDelivery.Services.AuthAPI.Models;
+using FoodDelivery.Services.AuthAPI.RabbitMQSender;
+using FoodDelivery.Services.AuthAPI.Service;
+using FoodDelivery.Services.AuthAPI.Service.IService;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 

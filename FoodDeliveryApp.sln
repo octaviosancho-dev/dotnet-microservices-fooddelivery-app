@@ -11,25 +11,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{FD5A1B0C-387F-4114-8277-A23783B1E401}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.CouponAPI", "Mango.Services.CouponAPI\Mango.Services.CouponAPI.csproj", "{583787A0-8393-474F-A659-72F930A556A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodDelivery.Services.CouponAPI", "Mango.Services.CouponAPI\FoodDelivery.Services.CouponAPI.csproj", "{583787A0-8393-474F-A659-72F930A556A6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Web", "Mango.Web\Mango.Web.csproj", "{78925E14-5CDE-4B26-AD22-256A86A2F3BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodDelivery.Web", "Mango.Web\FoodDelivery.Web.csproj", "{78925E14-5CDE-4B26-AD22-256A86A2F3BF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.AuthAPI", "Mango.Services.AuthAPI\Mango.Services.AuthAPI.csproj", "{5B5FB53E-6749-42E3-BC03-1465E3675E86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodDelivery.Services.AuthAPI", "Mango.Services.AuthAPI\FoodDelivery.Services.AuthAPI.csproj", "{5B5FB53E-6749-42E3-BC03-1465E3675E86}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.ProductAPI", "Mango.Services.ProductAPI\Mango.Services.ProductAPI.csproj", "{E1416207-D591-4427-ADF3-286583B52EBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodDelivery.Services.ProductAPI", "Mango.Services.ProductAPI\FoodDelivery.Services.ProductAPI.csproj", "{E1416207-D591-4427-ADF3-286583B52EBF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.ShoppingCartAPI", "Mango.Services.ShoppingCartAPI\Mango.Services.ShoppingCartAPI.csproj", "{5A331C41-56AA-46F7-BA78-10DD021B14B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodDelivery.Services.ShoppingCartAPI", "Mango.Services.ShoppingCartAPI\FoodDelivery.Services.ShoppingCartAPI.csproj", "{5A331C41-56AA-46F7-BA78-10DD021B14B4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.MessageBus", "Mango.MessageBus\Mango.MessageBus.csproj", "{90DF18EC-99C9-4830-B2E1-EE398F7E0402}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodDelivery.MessageBus", "Mango.MessageBus\FoodDelivery.MessageBus.csproj", "{90DF18EC-99C9-4830-B2E1-EE398F7E0402}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.EmailAPI", "Mango.Services.EmailAPI\Mango.Services.EmailAPI.csproj", "{D4281744-C72F-4FD1-BD97-7770EC3F7279}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodDelivery.Services.EmailAPI", "Mango.Services.EmailAPI\FoodDelivery.Services.EmailAPI.csproj", "{D4281744-C72F-4FD1-BD97-7770EC3F7279}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.OrderAPI", "Mango.Services.OrderAPI\Mango.Services.OrderAPI.csproj", "{181FC40E-927E-467F-9DEE-A70260A7C206}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodDelivery.Services.OrderAPI", "Mango.Services.OrderAPI\FoodDelivery.Services.OrderAPI.csproj", "{181FC40E-927E-467F-9DEE-A70260A7C206}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.RewardsAPI", "Mango.Services.RewardsAPI\Mango.Services.RewardsAPI.csproj", "{09DB1271-CED9-4903-9BA9-DA6A60D78628}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodDelivery.Services.RewardsAPI", "Mango.Services.RewardsAPI\FoodDelivery.Services.RewardsAPI.csproj", "{09DB1271-CED9-4903-9BA9-DA6A60D78628}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.GatewaySolution", "Mango.GatewaySolution\Mango.GatewaySolution.csproj", "{6F099F37-C40A-4911-AF57-9713FDA228EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodDelivery.GatewaySolution", "Mango.GatewaySolution\FoodDelivery.GatewaySolution.csproj", "{6F099F37-C40A-4911-AF57-9713FDA228EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

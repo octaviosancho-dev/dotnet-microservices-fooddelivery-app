@@ -1,6 +1,6 @@
-﻿using Mango.Web.Models;
-using Mango.Web.Service.IService;
-using Mango.Web.Utility;
+﻿using FoodDelivery.Web.Models;
+using FoodDelivery.Web.Service.IService;
+using FoodDelivery.Web.Utility;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
-namespace Mango.Web.Controllers
+namespace FoodDelivery.Web.Controllers
 {
     public class AuthController : Controller
     {

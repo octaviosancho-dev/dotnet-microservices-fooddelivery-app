@@ -1,4 +1,4 @@
-﻿namespace Mango.Web.Utility
+﻿namespace FoodDelivery.Web.Utility
 {
     public class SD
     {

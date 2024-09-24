@@ -1,4 +1,4 @@
-﻿namespace Mango.Services.AuthAPI.RabbitMQSender
+﻿namespace FoodDelivery.Services.AuthAPI.RabbitMQSender
 {
     public interface IRabbitMQAuthMessageSender
     {

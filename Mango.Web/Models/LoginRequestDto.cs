@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Mango.Web.Models
+namespace FoodDelivery.Web.Models
 {
     public class LoginRequestDto
     {

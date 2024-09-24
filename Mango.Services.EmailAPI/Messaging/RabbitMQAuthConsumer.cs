@@ -1,10 +1,10 @@
-﻿using Mango.Services.EmailAPI.Services;
+﻿using FoodDelivery.Services.EmailAPI.Services;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
 
-namespace Mango.Services.EmailAPI.Messaging
+namespace FoodDelivery.Services.EmailAPI.Messaging
 {
     public class RabbitMQAuthConsumer : BackgroundService
     {

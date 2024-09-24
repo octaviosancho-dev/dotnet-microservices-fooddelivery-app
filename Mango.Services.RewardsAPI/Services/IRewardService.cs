@@ -1,6 +1,6 @@
-﻿using Mango.Services.RewardsAPI.Message;
+﻿using FoodDelivery.Services.RewardsAPI.Message;
 
-namespace Mango.Services.RewardsAPI.Services
+namespace FoodDelivery.Services.RewardsAPI.Services
 {
     public interface IRewardService
     {

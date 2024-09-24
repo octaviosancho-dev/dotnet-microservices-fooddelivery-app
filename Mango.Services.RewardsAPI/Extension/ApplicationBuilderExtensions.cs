@@ -1,6 +1,6 @@
-﻿using Mango.Services.RewardsAPI.Messaging;
+﻿using FoodDelivery.Services.RewardsAPI.Messaging;
 
-namespace Mango.Services.RewardsAPI.Extension
+namespace FoodDelivery.Services.RewardsAPI.Extension
 {
     public static class ApplicationBuilderExtensions
     {

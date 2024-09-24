@@ -1,10 +1,10 @@
 ﻿using Azure.Messaging.ServiceBus;
-using Mango.Services.RewardsAPI.Message;
-using Mango.Services.RewardsAPI.Services;
+using FoodDelivery.Services.RewardsAPI.Message;
+using FoodDelivery.Services.RewardsAPI.Services;
 using Newtonsoft.Json;
 using System.Text;
 
-namespace Mango.Services.RewardsAPI.Messaging
+namespace FoodDelivery.Services.RewardsAPI.Messaging
 {
     public class AzureServiceBusConsumer : IAzureServiceBusConsumer
     {

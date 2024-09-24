@@ -1,9 +1,9 @@
-﻿using Mango.Services.AuthAPI.Models;
+﻿using FoodDelivery.Services.AuthAPI.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Mango.Services.AuthAPI.Data
+namespace FoodDelivery.Services.AuthAPI.Data
 {
     public class AppDbContext : IdentityDbContext<ApplicationUser>
     {

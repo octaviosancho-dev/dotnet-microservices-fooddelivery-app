@@ -1,18 +1,18 @@
 ﻿using AutoMapper;
-using Mango.MessageBus;
-using Mango.Services.OrderAPI.Data;
-using Mango.Services.OrderAPI.Models;
-using Mango.Services.OrderAPI.Models.Dto;
-using Mango.Services.OrderAPI.RabbitMQSender;
-using Mango.Services.OrderAPI.Service.IService;
-using Mango.Services.OrderAPI.Utility;
+using FoodDelivery.MessageBus;
+using FoodDelivery.Services.OrderAPI.Data;
+using FoodDelivery.Services.OrderAPI.Models;
+using FoodDelivery.Services.OrderAPI.Models.Dto;
+using FoodDelivery.Services.OrderAPI.RabbitMQSender;
+using FoodDelivery.Services.OrderAPI.Service.IService;
+using FoodDelivery.Services.OrderAPI.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Stripe;
 using Stripe.Checkout;
 
-namespace Mango.Services.OrderAPI.Controllers
+namespace FoodDelivery.Services.OrderAPI.Controllers
 {
     [Route("api/order")]
     [ApiController]

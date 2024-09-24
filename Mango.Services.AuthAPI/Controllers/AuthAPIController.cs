@@ -1,11 +1,11 @@
-﻿using Mango.MessageBus;
-using Mango.Services.AuthAPI.Models.Dto;
-using Mango.Services.AuthAPI.RabbitMQSender;
-using Mango.Services.AuthAPI.Service.IService;
+﻿using FoodDelivery.MessageBus;
+using FoodDelivery.Services.AuthAPI.Models.Dto;
+using FoodDelivery.Services.AuthAPI.RabbitMQSender;
+using FoodDelivery.Services.AuthAPI.Service.IService;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Mango.Services.AuthAPI.Controllers
+namespace FoodDelivery.Services.AuthAPI.Controllers
 {
     [Route("api/auth")]
     [ApiController]

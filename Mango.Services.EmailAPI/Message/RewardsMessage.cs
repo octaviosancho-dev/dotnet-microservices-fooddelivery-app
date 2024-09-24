@@ -1,4 +1,4 @@
-﻿namespace Mango.Services.EmailAPI.Message
+﻿namespace FoodDelivery.Services.EmailAPI.Message
 {
     public class RewardsMessage
     {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Mango.Services.ShoppingCartAPI.Models.Dto
+namespace FoodDelivery.Services.ShoppingCartAPI.Models.Dto
 {
     public class ProductDto
     {

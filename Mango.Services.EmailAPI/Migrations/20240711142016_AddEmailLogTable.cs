@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Mango.Services.EmailAPI.Migrations
+namespace FoodDelivery.Services.EmailAPI.Migrations
 {
     /// <inheritdoc />
     public partial class AddEmailLogTable : Migration

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace Mango.Services.AuthAPI.Models
+namespace FoodDelivery.Services.AuthAPI.Models
 {
     public class ApplicationUser : IdentityUser
     {

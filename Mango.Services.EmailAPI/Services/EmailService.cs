@@ -1,11 +1,11 @@
-﻿using Mango.Services.EmailAPI.Data;
-using Mango.Services.EmailAPI.Message;
-using Mango.Services.EmailAPI.Models;
-using Mango.Services.EmailAPI.Models.Dto;
+﻿using FoodDelivery.Services.EmailAPI.Data;
+using FoodDelivery.Services.EmailAPI.Message;
+using FoodDelivery.Services.EmailAPI.Models;
+using FoodDelivery.Services.EmailAPI.Models.Dto;
 using Microsoft.EntityFrameworkCore;
 using System.Text;
 
-namespace Mango.Services.EmailAPI.Services
+namespace FoodDelivery.Services.EmailAPI.Services
 {
     public class EmailService : IEmailService
     {

@@ -1,7 +1,7 @@
-using Mango.Services.EmailAPI.Data;
-using Mango.Services.EmailAPI.Extension;
-using Mango.Services.EmailAPI.Messaging;
-using Mango.Services.EmailAPI.Services;
+using FoodDelivery.Services.EmailAPI.Data;
+using FoodDelivery.Services.EmailAPI.Extension;
+using FoodDelivery.Services.EmailAPI.Messaging;
+using FoodDelivery.Services.EmailAPI.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

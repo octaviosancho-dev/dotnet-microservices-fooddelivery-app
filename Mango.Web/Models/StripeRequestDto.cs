@@ -1,6 +1,6 @@
-﻿using Mango.Web.Models.Dto;
+﻿using FoodDelivery.Web.Models.Dto;
 
-namespace Mango.Web.Models
+namespace FoodDelivery.Web.Models
 {
     public class StripeRequestDto
     {

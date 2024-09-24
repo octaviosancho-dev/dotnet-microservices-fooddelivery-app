@@ -1,6 +1,6 @@
-@Mango.Services.ProductAPI_HostAddress = http://localhost:5018
+@FoodDelivery.Services.ProductAPI_HostAddress = http://localhost:5018
 
-GET {{Mango.Services.ProductAPI_HostAddress}}/weatherforecast/
+GET {{FoodDelivery.Services.ProductAPI_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

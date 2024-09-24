@@ -1,9 +1,9 @@
-﻿using Mango.Web.Models;
-using Mango.Web.Service.IService;
+﻿using FoodDelivery.Web.Models;
+using FoodDelivery.Web.Service.IService;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace Mango.Web.Controllers
+namespace FoodDelivery.Web.Controllers
 {
     public class ProductController : Controller
     {

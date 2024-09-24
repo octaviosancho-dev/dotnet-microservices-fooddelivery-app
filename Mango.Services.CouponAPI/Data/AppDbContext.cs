@@ -1,7 +1,7 @@
-﻿using Mango.Services.CouponAPI.Models;
+﻿using FoodDelivery.Services.CouponAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Mango.Services.CouponAPI.Data
+namespace FoodDelivery.Services.CouponAPI.Data
 {
     public class AppDbContext : DbContext
     {

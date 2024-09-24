@@ -1,4 +1,4 @@
-﻿namespace Mango.Services.AuthAPI.Models
+﻿namespace FoodDelivery.Services.AuthAPI.Models
 {
     public class JwtOptions
     {

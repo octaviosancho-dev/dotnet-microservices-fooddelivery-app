@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using Mango.Services.ProductAPI.Models;
-using Mango.Services.ProductAPI.Models.Dto;
+using FoodDelivery.Services.ProductAPI.Models;
+using FoodDelivery.Services.ProductAPI.Models.Dto;
 
-namespace Mango.Services.ProductAPI
+namespace FoodDelivery.Services.ProductAPI
 {
     public class MappingConfig
     {

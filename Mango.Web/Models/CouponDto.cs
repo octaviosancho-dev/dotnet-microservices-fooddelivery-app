@@ -1,4 +1,4 @@
-﻿namespace Mango.Web.Models
+﻿namespace FoodDelivery.Web.Models
 {
     public class CouponDto
     {

@@ -1,4 +1,4 @@
-using Mango.GatewaySolution.Extensions;
+using FoodDelivery.GatewaySolution.Extensions;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 

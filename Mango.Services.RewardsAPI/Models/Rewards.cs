@@ -1,4 +1,4 @@
-﻿namespace Mango.Services.RewardsAPI.Models
+﻿namespace FoodDelivery.Services.RewardsAPI.Models
 {
     public class Rewards
     {

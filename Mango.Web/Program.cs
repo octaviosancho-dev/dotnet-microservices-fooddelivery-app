@@ -1,6 +1,6 @@
-using Mango.Web.Service;
-using Mango.Web.Service.IService;
-using Mango.Web.Utility;
+using FoodDelivery.Web.Service;
+using FoodDelivery.Web.Service.IService;
+using FoodDelivery.Web.Utility;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
