@@ -1,25 +1,25 @@
-# Etapa de construcci髇
+# Etapa de construcci贸n
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
 WORKDIR /app
 
-# Copiar el archivo .csproj espec韋ico y restaurar dependencias
-COPY ./FoodDelivery.Services.AuthAPI/FoodDelivery.Services.AuthAPI.csproj ./FoodDelivery.Services.AuthAPI/
-RUN dotnet restore "./FoodDelivery.Services.AuthAPI/FoodDelivery.Services.AuthAPI.csproj"
+# Copiar el archivo .csproj espec铆fico y restaurar dependencias
+COPY ./Services/FoodDelivery.Services.AuthAPI/FoodDelivery.Services.AuthAPI.csproj ./Services/FoodDelivery.Services.AuthAPI/
+RUN dotnet restore "./Services/FoodDelivery.Services.AuthAPI/FoodDelivery.Services.AuthAPI.csproj"
 
-# Copiar todo el resto del c骴igo del microservicio
-COPY ./FoodDelivery.Services.AuthAPI/ ./FoodDelivery.Services.AuthAPI/
+# Copiar todo el resto del c贸digo del microservicio
+COPY ./Services/FoodDelivery.Services.AuthAPI/ ./Services/FoodDelivery.Services.AuthAPI/
 
-# Compilar y publicar el c骴igo
-WORKDIR /app/FoodDelivery.Services.AuthAPI
+# Compilar y publicar el c贸digo
+WORKDIR /app/Services/FoodDelivery.Services.AuthAPI
 RUN dotnet publish -c Release -o out
 
 # Etapa de runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
-COPY --from=build-env /app/FoodDelivery.Services.AuthAPI/out .
+COPY --from=build-env /app/Services/FoodDelivery.Services.AuthAPI/out .
 
 # Exponer puerto
 EXPOSE 7002
 
-# Ejecutar la aplicaci髇
+# Ejecutar la aplicaci贸n
 ENTRYPOINT ["dotnet", "FoodDelivery.Services.AuthAPI.dll"]
