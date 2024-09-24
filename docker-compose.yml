@@ -3,47 +3,47 @@ services:
   AuthAPI:
     build: ./FoodDelivery.Services.AuthAPI
     ports:
-      - "7002:80"
+      - "7002:7002"
 
   CouponAPI:
     build: ./FoodDelivery.Services.CouponAPI
     ports:
-      - "7001:80"
+      - "7001:7001"
 
   EmailAPI:
     build: ./FoodDelivery.Services.EmailAPI
     ports:
-      - "7029:80"
+      - "7029:7029"
 
   OrderAPI:
     build: ./FoodDelivery.Services.OrderAPI
     ports:
-      - "7004:80"
+      - "7004:7004"
 
   ProductAPI:
     build: ./FoodDelivery.Services.ProductAPI
     ports:
-      - "7000:80"
+      - "7000:7000"
  
   RewardsAPI:
     build: ./FoodDelivery.Services.RewardsAPI
     ports:
-      - "7187:80"
+      - "7187:7187"
 
   ShoppingCartAPI:
     build: ./FoodDelivery.Services.ShoppingCartAPI
     ports:
-      - "7003:80"
+      - "7003:7003"
 
   WebApp:
     build: ./FoodDelivery.Web
     ports:
-      - "7231:80"
+      - "7231:7231"
 
   gateway:
     build: ./FoodDelivery.GatewaySolution
     ports:
-      - "7777:80"
+      - "7777:7777"
 
   rabbitmq:
     image: rabbitmq:3-management
@@ -51,5 +51,5 @@ services:
       - "5672:5672"  # Puerto para comunicación de RabbitMQ
       - "15672:15672"  # Puerto para interfaz de administración de RabbitMQ
     environment:
-      - RABBITMQ_DEFAULT_USER=guest
-      - RABBITMQ_DEFAULT_PASS=guest
+      - RABBITMQ_DEFAULT_USER=eyndqlge
+      - RABBITMQ_DEFAULT_PASS=UyIFsIiLOzs-mMv80Z-pS6KBGzNBYkHV
