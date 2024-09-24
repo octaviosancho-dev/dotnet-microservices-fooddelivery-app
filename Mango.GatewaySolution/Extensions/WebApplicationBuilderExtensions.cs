@@ -2,7 +2,7 @@
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
-namespace Mango.GatewaySolution.Extensions
+namespace FoodDelivery.GatewaySolution.Extensions
 {
     public static class WebApplicationBuilderExtensions
     {

@@ -1,6 +1,6 @@
-﻿using Mango.Services.AuthAPI.Models;
+﻿using FoodDelivery.Services.AuthAPI.Models;
 
-namespace Mango.Services.AuthAPI.Service.IService
+namespace FoodDelivery.Services.AuthAPI.Service.IService
 {
     public interface IJwtTokenGenerator
     {

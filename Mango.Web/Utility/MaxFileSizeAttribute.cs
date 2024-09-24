@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Mango.Web.Utility
+namespace FoodDelivery.Web.Utility
 {
     public class MaxFileSizeAttribute : ValidationAttribute
     {

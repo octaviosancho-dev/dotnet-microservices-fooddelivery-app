@@ -1,7 +1,7 @@
 using AutoMapper;
-using Mango.Services.ProductAPI;
-using Mango.Services.ProductAPI.Data;
-using Mango.Services.ProductAPI.Extensions;
+using FoodDelivery.Services.ProductAPI;
+using FoodDelivery.Services.ProductAPI.Data;
+using FoodDelivery.Services.ProductAPI.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;

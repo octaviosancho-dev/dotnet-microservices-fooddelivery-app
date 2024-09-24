@@ -1,8 +1,8 @@
-﻿using Mango.Services.OrderAPI.Models.Dto;
-using Mango.Services.OrderAPI.Service.IService;
+﻿using FoodDelivery.Services.OrderAPI.Models.Dto;
+using FoodDelivery.Services.OrderAPI.Service.IService;
 using Newtonsoft.Json;
 
-namespace Mango.Services.OrderAPI.Service
+namespace FoodDelivery.Services.OrderAPI.Service
 {
     public class ProductService : IProductService
     {

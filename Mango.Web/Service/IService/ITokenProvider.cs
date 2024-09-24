@@ -1,4 +1,4 @@
-﻿namespace Mango.Web.Service.IService
+﻿namespace FoodDelivery.Web.Service.IService
 {
     public interface ITokenProvider
     {

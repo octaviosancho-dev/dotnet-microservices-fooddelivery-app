@@ -1,10 +1,10 @@
-﻿using Mango.Web.Models;
-using Mango.Web.Service.IService;
+﻿using FoodDelivery.Web.Models;
+using FoodDelivery.Web.Service.IService;
 using Newtonsoft.Json;
 using System.Text;
-using static Mango.Web.Utility.SD;
+using static FoodDelivery.Web.Utility.SD;
 
-namespace Mango.Web.Service
+namespace FoodDelivery.Web.Service
 {
     public class BaseService : IBaseService
     {
@@ -21,7 +21,7 @@ namespace Mango.Web.Service
         {
             try
             {
-                HttpClient client = _httpClientFactory.CreateClient("MangoAPI");
+                HttpClient client = _httpClientFactory.CreateClient("FoodDeliveryAPI");
                 HttpRequestMessage message = new();
                 if (requestDto.ContentType == ContentType.MultipartFormData)
                 {

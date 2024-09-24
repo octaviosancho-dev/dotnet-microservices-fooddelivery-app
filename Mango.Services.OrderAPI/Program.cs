@@ -1,11 +1,11 @@
 using AutoMapper;
-using Mango.MessageBus;
-using Mango.Services.OrderAPI;
-using Mango.Services.OrderAPI.Data;
-using Mango.Services.OrderAPI.Extensions;
-using Mango.Services.OrderAPI.Service;
-using Mango.Services.OrderAPI.Service.IService;
-using Mango.Services.OrderAPI.Utility;
+using FoodDelivery.Services.OrderAPI;
+using FoodDelivery.Services.OrderAPI.Data;
+using FoodDelivery.Services.OrderAPI.Extensions;
+using FoodDelivery.Services.OrderAPI.RabbitMQSender;
+using FoodDelivery.Services.OrderAPI.Service;
+using FoodDelivery.Services.OrderAPI.Service.IService;
+using FoodDelivery.Services.OrderAPI.Utility;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -25,7 +25,7 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<BackendApiAuthenticationHttpClientHandler>();
-builder.Services.AddScoped<IMessageBus, MessageBus>();
+builder.Services.AddScoped<IRabbitMQOrderMessageSender, RabbitMQOrderMessageSender>();
 builder.Services.AddHttpClient("Product", u => u.BaseAddress =
     new Uri(builder.Configuration["ServiceUrls:ProductAPI"])).AddHttpMessageHandler<BackendApiAuthenticationHttpClientHandler>();
 builder.Services.AddControllers();

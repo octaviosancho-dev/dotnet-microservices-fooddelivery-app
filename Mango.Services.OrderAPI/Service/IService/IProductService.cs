@@ -1,6 +1,6 @@
-﻿using Mango.Services.OrderAPI.Models.Dto;
+﻿using FoodDelivery.Services.OrderAPI.Models.Dto;
 
-namespace Mango.Services.OrderAPI.Service.IService
+namespace FoodDelivery.Services.OrderAPI.Service.IService
 {
     public interface IProductService
     {

@@ -1,6 +1,6 @@
-﻿using Mango.Web.Models;
+﻿using FoodDelivery.Web.Models;
 
-namespace Mango.Web.Models
+namespace FoodDelivery.Web.Models
 {
     public class CartDetailsDto
     {

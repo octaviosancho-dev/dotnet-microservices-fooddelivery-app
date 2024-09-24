@@ -1,7 +1,7 @@
-﻿using Mango.Services.RewardsAPI.Models;
+﻿using FoodDelivery.Services.RewardsAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Mango.Services.RewardsAPI.Data
+namespace FoodDelivery.Services.RewardsAPI.Data
 {
     public class AppDbContext : DbContext
     {

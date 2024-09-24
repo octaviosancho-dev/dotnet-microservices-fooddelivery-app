@@ -1,6 +1,6 @@
-﻿using Mango.Web.Models;
+﻿using FoodDelivery.Web.Models;
 
-namespace Mango.Web.Service.IService
+namespace FoodDelivery.Web.Service.IService
 {
     public interface ICouponService
     {

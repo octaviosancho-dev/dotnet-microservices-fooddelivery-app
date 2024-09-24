@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Mango.Services.CouponAPI.Migrations
+namespace FoodDelivery.Services.CouponAPI.Migrations
 {
     /// <inheritdoc />
     public partial class addIdentityTables : Migration

@@ -1,6 +1,6 @@
-@Mango.Services.EmailAPI_HostAddress = http://localhost:5013
+@FoodDelivery.Services.EmailAPI_HostAddress = http://localhost:5013
 
-GET {{Mango.Services.EmailAPI_HostAddress}}/weatherforecast/
+GET {{FoodDelivery.Services.EmailAPI_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

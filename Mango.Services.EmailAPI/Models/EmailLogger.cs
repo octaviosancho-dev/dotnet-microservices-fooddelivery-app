@@ -1,4 +1,4 @@
-﻿namespace Mango.Services.EmailAPI.Models
+﻿namespace FoodDelivery.Services.EmailAPI.Models
 {
     public class EmailLogger
     {

@@ -1,4 +1,4 @@
-﻿namespace Mango.Web.Models.Dto
+﻿namespace FoodDelivery.Web.Models.Dto
 {
     public class OrderHeaderDto
     {

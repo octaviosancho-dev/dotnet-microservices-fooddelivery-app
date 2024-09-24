@@ -1,7 +1,7 @@
-﻿using Mango.Services.OrderAPI.Models;
+﻿using FoodDelivery.Services.OrderAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Mango.Services.OrderAPI.Data
+namespace FoodDelivery.Services.OrderAPI.Data
 {
     public class AppDbContext : DbContext
     {

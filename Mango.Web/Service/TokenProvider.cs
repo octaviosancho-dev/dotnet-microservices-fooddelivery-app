@@ -1,8 +1,8 @@
-﻿using Mango.Web.Service.IService;
-using Mango.Web.Utility;
+﻿using FoodDelivery.Web.Service.IService;
+using FoodDelivery.Web.Utility;
 using Newtonsoft.Json.Linq;
 
-namespace Mango.Web.Service
+namespace FoodDelivery.Web.Service
 {
     public class TokenProvider : ITokenProvider
     {

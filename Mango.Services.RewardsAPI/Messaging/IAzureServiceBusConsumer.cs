@@ -1,4 +1,4 @@
-﻿namespace Mango.Services.RewardsAPI.Messaging
+﻿namespace FoodDelivery.Services.RewardsAPI.Messaging
 {
     public interface IAzureServiceBusConsumer
     {

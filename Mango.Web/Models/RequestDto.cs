@@ -1,6 +1,6 @@
-﻿using static Mango.Web.Utility.SD;
+﻿using static FoodDelivery.Web.Utility.SD;
 
-namespace Mango.Web.Models
+namespace FoodDelivery.Web.Models
 {
     public class RequestDto
     {

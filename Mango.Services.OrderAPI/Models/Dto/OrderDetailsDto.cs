@@ -1,4 +1,4 @@
-﻿namespace Mango.Services.OrderAPI.Models.Dto
+﻿namespace FoodDelivery.Services.OrderAPI.Models.Dto
 {
     public class OrderDetailsDto
     {

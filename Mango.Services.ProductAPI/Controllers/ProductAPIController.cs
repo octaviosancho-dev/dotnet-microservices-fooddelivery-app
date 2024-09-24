@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
-using Mango.Services.ProductAPI.Data;
-using Mango.Services.ProductAPI.Models;
-using Mango.Services.ProductAPI.Models.Dto;
+using FoodDelivery.Services.ProductAPI.Data;
+using FoodDelivery.Services.ProductAPI.Models;
+using FoodDelivery.Services.ProductAPI.Models.Dto;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Mango.Services.ProductAPI.Controllers
+namespace FoodDelivery.Services.ProductAPI.Controllers
 {
     [Route("api/product")]
     [ApiController]

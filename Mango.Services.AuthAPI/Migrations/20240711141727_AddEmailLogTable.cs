@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Mango.Services.AuthAPI.Migrations
+namespace FoodDelivery.Services.AuthAPI.Migrations
 {
     /// <inheritdoc />
     public partial class AddEmailLogTable : Migration

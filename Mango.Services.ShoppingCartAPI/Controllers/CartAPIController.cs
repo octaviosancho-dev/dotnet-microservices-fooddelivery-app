@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
-using Mango.MessageBus;
-using Mango.Services.ShoppingCartAPI.Data;
-using Mango.Services.ShoppingCartAPI.Models;
-using Mango.Services.ShoppingCartAPI.Models.Dto;
-using Mango.Services.ShoppingCartAPI.Service.IService;
-using Microsoft.AspNetCore.Http;
+using FoodDelivery.MessageBus;
+using FoodDelivery.Services.ShoppingCartAPI.Data;
+using FoodDelivery.Services.ShoppingCartAPI.Models;
+using FoodDelivery.Services.ShoppingCartAPI.Models.Dto;
+using FoodDelivery.Services.ShoppingCartAPI.RabbitMQSender;
+using FoodDelivery.Services.ShoppingCartAPI.Service.IService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Mango.Services.ShoppingCartAPI.Controllers
+namespace FoodDelivery.Services.ShoppingCartAPI.Controllers
 {
     [Route("api/cart")]
     [ApiController]
@@ -19,10 +19,10 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
         private readonly AppDbContext _db;
         private readonly IProductService _productService;
         private readonly ICouponService _couponService;
-        private readonly IMessageBus _messageBus;
+        private readonly IRabbitMQCartMessageSender _messageBus;
         private IConfiguration _configuration;
 
-        public CartAPIController(AppDbContext db, IMapper mapper, IProductService productService, ICouponService couponService, IMessageBus messageBus, IConfiguration configuration)
+        public CartAPIController(AppDbContext db, IMapper mapper, IProductService productService, ICouponService couponService, IRabbitMQCartMessageSender messageBus, IConfiguration configuration)
         {
             _db = db;
             this._response = new ResponseDto();
@@ -97,10 +97,9 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
         {
             try
             {
-                await _messageBus.PublishMessage(
+                _messageBus.SendMessage(
                     cartDto,
-                    _configuration.GetValue<string>("TopicAndQueueNames:EmailShoppingCart"),
-                    _configuration.GetValue<string>("AzureServiceBus:ConnString")
+                    _configuration.GetValue<string>("TopicAndQueueNames:EmailShoppingCart")
                     );
                 _response.Result = true;
             }
