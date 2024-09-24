@@ -2,12 +2,15 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
 WORKDIR /app
 
-# Copiar y restaurar dependencias
-COPY *.csproj ./
-RUN dotnet restore
+# Copiar el archivo .csproj específico y restaurar dependencias
+COPY ./FoodDelivery.Web.csproj ./
+RUN dotnet restore "./FoodDelivery.Web.csproj"
 
-# Copiar y compilar el código
-COPY . ./
+# Copiar todo el resto del código del microservicio
+COPY ./ ./
+
+# Compilar y publicar el código
+WORKDIR /app
 RUN dotnet publish -c Release -o out
 
 # Etapa de runtime
@@ -16,7 +19,7 @@ WORKDIR /app
 COPY --from=build-env /app/out .
 
 # Exponer puerto
-EXPOSE 80
+EXPOSE 7231
 
 # Ejecutar la aplicación
 ENTRYPOINT ["dotnet", "FoodDelivery.Web.dll"]
