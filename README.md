@@ -27,6 +27,7 @@ The application is built with independent microservices for each key functionali
 - **Shopping Cart Service**: Allows users to add, modify, and remove products from their cart.
 - **Emails Service**: Handles email notifications such as order confirmations and status updates.
 
+![image](https://github.com/user-attachments/assets/332e3d51-a293-487a-a24c-3248be3d21f6)
 
 
 Each microservice is autonomous, with its own database and business logic. Communication between them is handled asynchronously using queues and topics with **RabbitMQ**.
@@ -44,8 +45,8 @@ Ensure you have the following tools installed:
 ### Clone the repository
 
 ```bash
-git clone https://github.com/octavio-sancho/FoodDeliveryApp.git
-cd FoodDeliveryApp
+git clone https://github.com/octaviosancho-dev/dotnet-microservices-fooddelivery-app.git
+cd dotnet-microservices-fooddelivery-app
 ```
 ## Run the Application
 
@@ -57,12 +58,17 @@ dotnet run
 ```
 Repeat this process for each microservice in the application.
 
+### To run the entire application, open Visual Studio 2022 and configure the startup as Multiple startup projects:
+
+![image](https://github.com/user-attachments/assets/7a9c8218-918b-4405-8d05-9499d2596e38)
+
+
 ## API Documentation
 
 Swagger is available to interact with the API:
 
 ```bash
-http://localhost:{port}/swagger
+http://localhost:{port}/swagger/index.html
 ```
 
 ## Technologies Used
