@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using FoodDelivery.MessageBus;
 using FoodDelivery.Services.ShoppingCartAPI.Data;
 using FoodDelivery.Services.ShoppingCartAPI.Models;
 using FoodDelivery.Services.ShoppingCartAPI.Models.Dto;

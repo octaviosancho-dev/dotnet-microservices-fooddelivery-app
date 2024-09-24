@@ -1,5 +1,4 @@
 using FoodDelivery.Services.EmailAPI.Data;
-using FoodDelivery.Services.EmailAPI.Extension;
 using FoodDelivery.Services.EmailAPI.Messaging;
 using FoodDelivery.Services.EmailAPI.Services;
 using Microsoft.EntityFrameworkCore;

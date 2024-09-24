@@ -1,4 +1,3 @@
-using FoodDelivery.MessageBus;
 using FoodDelivery.Services.AuthAPI.Data;
 using FoodDelivery.Services.AuthAPI.Models;
 using FoodDelivery.Services.AuthAPI.RabbitMQSender;

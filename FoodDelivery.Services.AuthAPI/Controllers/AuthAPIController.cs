@@ -1,5 +1,4 @@
-﻿using FoodDelivery.MessageBus;
-using FoodDelivery.Services.AuthAPI.Models.Dto;
+﻿using FoodDelivery.Services.AuthAPI.Models.Dto;
 using FoodDelivery.Services.AuthAPI.RabbitMQSender;
 using FoodDelivery.Services.AuthAPI.Service.IService;
 using Microsoft.AspNetCore.Http;
