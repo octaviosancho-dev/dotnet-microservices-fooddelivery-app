@@ -4,65 +4,36 @@ services:
     build: ./FoodDelivery.Services.AuthAPI
     ports:
       - "7002:7002"
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__DefaultConnection=Server=db;Database=AuthDB;User=guest;Password=guest;
-    depends_on:
-      - db
 
   CouponAPI:
     build: ./FoodDelivery.Services.CouponAPI
     ports:
       - "7001:7001"
-    environment:
-      - ConnectionStrings__DefaultConnection=Server=db;Database=CouponDB;User=guest;Password=guest;
-    depends_on:
-      - db
 
   EmailAPI:
     build: ./FoodDelivery.Services.EmailAPI
     ports:
       - "7029:7029"
-    environment:
-      - ConnectionStrings__DefaultConnection=Server=db;Database=EmailDB;User=guest;Password=guest;
-    depends_on:
-      - db
 
   OrderAPI:
     build: ./FoodDelivery.Services.OrderAPI
     ports:
       - "7004:7004"
-    environment:
-      - ConnectionStrings__DefaultConnection=Server=db;Database=OrderDB;User=guest;Password=guest;
-    depends_on:
-      - db
 
   ProductAPI:
     build: ./FoodDelivery.Services.ProductAPI
     ports:
       - "7000:7000"
-    environment:
-      - ConnectionStrings__DefaultConnection=Server=db;Database=ProductDB;User=guest;Password=guest;
-    depends_on:
-      - db
  
   RewardsAPI:
     build: ./FoodDelivery.Services.RewardsAPI
     ports:
       - "7187:7187"
-    environment:
-      - ConnectionStrings__DefaultConnection=Server=db;Database=RewardsDB;User=guest;Password=guest;
-    depends_on:
-      - db
 
   ShoppingCartAPI:
     build: ./FoodDelivery.Services.ShoppingCartAPI
     ports:
       - "7003:7003"
-    environment:
-      - ConnectionStrings__DefaultConnection=Server=db;Database=ShoppingCartDB;User=guest;Password=guest;
-    depends_on:
-      - db
 
   WebApp:
     build: ./FoodDelivery.Web
@@ -77,23 +48,8 @@ services:
   rabbitmq:
     image: rabbitmq:3-management
     ports:
-      - "5672:5672"
-      - "15672:15672"
+      - "5672:5672"  # Puerto para comunicación de RabbitMQ
+      - "15672:15672"  # Puerto para interfaz de administración de RabbitMQ
     environment:
       - RABBITMQ_DEFAULT_USER=eyndqlge
       - RABBITMQ_DEFAULT_PASS=UyIFsIiLOzs-mMv80Z-pS6KBGzNBYkHV
-
-  db:
-    image: mcr.microsoft.com/mssql/server:2022-latest
-    container_name: sqlserver
-    environment:
-      - ACCEPT_EULA=Y
-      - SA_PASSWORD=guest
-    ports:
-      - "1433:1433"
-    volumes:
-      - sqlvolume:/var/opt/mssql
-
-volumes:
-  sqlvolume:
-
