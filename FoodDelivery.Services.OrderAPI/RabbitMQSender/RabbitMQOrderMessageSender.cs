@@ -10,14 +10,15 @@ namespace FoodDelivery.Services.OrderAPI.RabbitMQSender
         private readonly string _username;
         private readonly string _password;
         private IConnection _connection;
+        private IConfiguration _config;
         private const string OrderCreated_RewardsUpdateQueue = "RewardsUpdateQueue";
         private const string OrderCreated_EmailUpdateQueue = "EmailUpdateQueue";
 
         public RabbitMQOrderMessageSender()
         {
-            _hostName = "localhost";
-            _username = "guest";
-            _password = "guest";
+            _hostName = _config.GetValue<string>("RabbitMQ:HostName");
+            _username = _config.GetValue<string>("RabbitMQ:User");
+            _password = _config.GetValue<string>("RabbitMQ:Password");
         }
 
         public void SendMessage(object message, string exchangeName)

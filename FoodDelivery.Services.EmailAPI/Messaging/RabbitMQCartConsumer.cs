@@ -20,9 +20,9 @@ namespace FoodDelivery.Services.EmailAPI.Messaging
             _emailService = emailService;
             var factory = new ConnectionFactory
             {
-                HostName = "localhost",
-                UserName = "guest",
-                Password = "guest"
+                HostName = _configuration.GetValue<string>("RabbitMQ:HostName"),
+                UserName = _configuration.GetValue<string>("RabbitMQ:User"),
+                Password = _configuration.GetValue<string>("RabbitMQ:Password")
             };
             _connection = factory.CreateConnection();
             _channel = _connection.CreateModel();

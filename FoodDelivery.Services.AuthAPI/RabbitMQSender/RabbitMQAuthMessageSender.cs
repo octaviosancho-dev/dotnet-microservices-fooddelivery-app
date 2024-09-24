@@ -10,12 +10,13 @@ namespace FoodDelivery.Services.AuthAPI.RabbitMQSender
         private readonly string _username;
         private readonly string _password;
         private IConnection _connection;
+        private IConfiguration _config;
 
         public RabbitMQAuthMessageSender()
         {
-            _hostName = "localhost";
-            _username = "guest";
-            _password = "guest";
+            _hostName = _config.GetValue<string>("RabbitMQ:HostName");
+            _username = _config.GetValue<string>("RabbitMQ:User");
+            _password = _config.GetValue<string>("RabbitMQ:Password");
         }
 
         public void SendMessage(object message, string queueName)

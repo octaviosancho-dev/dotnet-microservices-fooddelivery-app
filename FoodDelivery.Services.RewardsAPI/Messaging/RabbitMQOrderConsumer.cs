@@ -23,9 +23,9 @@ namespace FoodDelivery.Services.RewardsAPI.Messaging
             ExchangeName = _configuration.GetValue<string>("TopicAndQueueNames:OrderCreatedTopic");
             var factory = new ConnectionFactory
             {
-                HostName = "localhost",
-                UserName = "guest",
-                Password = "guest"
+                HostName = _configuration.GetValue<string>("RabbitMQ:HostName"),
+                UserName = _configuration.GetValue<string>("RabbitMQ:User"),
+                Password = _configuration.GetValue<string>("RabbitMQ:Password")
             };
             _connection = factory.CreateConnection();
             _channel = _connection.CreateModel();
