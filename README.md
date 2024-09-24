@@ -70,6 +70,7 @@ http://localhost:{port}/swagger
 - .NET 8
 - Docker
 - RabbitMQ (for messaging between microservices)
+- Azure Service Bus (the app has another messaging feature with Azure in other branch)
 - Entity Framework Core (for data access)
 - Swagger (for API documentation)
 - Ocelot Gateway (for routing between microservices)
