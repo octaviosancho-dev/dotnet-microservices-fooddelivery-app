@@ -25,7 +25,8 @@ namespace FoodDelivery.Services.EmailAPI.Messaging
             {
                 HostName = _configuration.GetValue<string>("RabbitMQ:HostName"),
                 UserName = _configuration.GetValue<string>("RabbitMQ:User"),
-                Password = _configuration.GetValue<string>("RabbitMQ:Password")
+                Password = _configuration.GetValue<string>("RabbitMQ:Password"),
+                VirtualHost = _configuration.GetValue<string>("RabbitMQ:VirtualHost")
             };
             _connection = factory.CreateConnection();
             _channel = _connection.CreateModel();
