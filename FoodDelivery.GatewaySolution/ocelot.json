@@ -7,7 +7,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-web.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamHttpMethod": [ "GET" ]
@@ -20,7 +20,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-productapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/product",
@@ -32,7 +32,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-productapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/product/{id}",
@@ -47,7 +47,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-productapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/product",
@@ -64,7 +64,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-couponapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/coupon",
@@ -76,7 +76,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-couponapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/coupon/{id}",
@@ -91,7 +91,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-couponapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/coupon",
@@ -106,7 +106,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-couponapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/coupon/GetByCode/{code}",
@@ -123,7 +123,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-shoppingcartapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/cart/GetCart/{id}",
@@ -135,7 +135,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-shoppingcartapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/cart/ApplyCoupon",
@@ -147,7 +147,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-shoppingcartapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/cart/EmailCartRequest",
@@ -159,7 +159,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-shoppingcartapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/cart/RemoveCart",
@@ -171,7 +171,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-shoppingcartapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/cart/cartUpsert",
@@ -185,7 +185,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-orderapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/order/GetOrders/{id}",
@@ -200,7 +200,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-orderapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/order/GetOrders/",
@@ -215,7 +215,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-orderapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/order/GetOrder/{id}",
@@ -230,7 +230,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-orderapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/order/CreateOrder",
@@ -245,7 +245,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-orderapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/order/CreateStripeSession",
@@ -260,7 +260,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-orderapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/order/UpdateOrderStatus/{id}",
@@ -275,7 +275,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "https://fooddelivery-services-orderapi.onrender.com",
-          "Port": 8080
+          "Port": 10000
         }
       ],
       "UpstreamPathTemplate": "/api/order/ValidateStripeSession",
