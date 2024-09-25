@@ -19,7 +19,7 @@ WORKDIR /app
 COPY --from=build-env /app/out .
 
 # Exponer puerto
-EXPOSE 7029
+EXPOSE 8080
 
 # Ejecutar la aplicación
 ENTRYPOINT ["dotnet", "FoodDelivery.Services.EmailAPI.dll"]

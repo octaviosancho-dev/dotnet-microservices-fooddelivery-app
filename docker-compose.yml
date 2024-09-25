@@ -3,47 +3,47 @@ services:
   AuthAPI:
     build: ./FoodDelivery.Services.AuthAPI
     ports:
-      - "7002:7002"
+      - "8080:8080"
 
   CouponAPI:
     build: ./FoodDelivery.Services.CouponAPI
     ports:
-      - "7001:7001"
+      - "8080:8080"
 
   EmailAPI:
     build: ./FoodDelivery.Services.EmailAPI
     ports:
-      - "7029:7029"
+      - "8080:8080"
 
   OrderAPI:
     build: ./FoodDelivery.Services.OrderAPI
     ports:
-      - "7004:7004"
+      - "8080:8080"
 
   ProductAPI:
     build: ./FoodDelivery.Services.ProductAPI
     ports:
-      - "7000:7000"
+      - "8080:8080"
  
   RewardsAPI:
     build: ./FoodDelivery.Services.RewardsAPI
     ports:
-      - "7187:7187"
+      - "8080:8080"
 
   ShoppingCartAPI:
     build: ./FoodDelivery.Services.ShoppingCartAPI
     ports:
-      - "7003:7003"
+      - "8080:8080"
 
   WebApp:
     build: ./FoodDelivery.Web
     ports:
-      - "7231:7231"
+      - "8080:8080"
 
   gateway:
     build: ./FoodDelivery.GatewaySolution
     ports:
-      - "7777:7777"
+      - "8080:8080"
 
   rabbitmq:
     image: rabbitmq:3-management
