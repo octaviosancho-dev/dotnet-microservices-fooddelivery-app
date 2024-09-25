@@ -61,7 +61,8 @@ namespace FoodDelivery.Services.OrderAPI.RabbitMQSender
                 {
                     HostName = _hostName,
                     UserName = _username,
-                    Password = _password
+                    Password = _password,
+                    VirtualHost = _vhost
                 };
 
                 _connection = factory.CreateConnection();

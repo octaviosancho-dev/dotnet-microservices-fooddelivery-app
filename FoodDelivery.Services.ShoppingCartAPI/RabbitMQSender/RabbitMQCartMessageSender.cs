@@ -48,7 +48,8 @@ namespace FoodDelivery.Services.ShoppingCartAPI.RabbitMQSender
                 {
                     HostName = _hostName,
                     UserName = _username,
-                    Password = _password
+                    Password = _password,
+                    VirtualHost = _vhost
                 };
 
                 _connection = factory.CreateConnection();
