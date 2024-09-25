@@ -13,8 +13,9 @@ namespace FoodDelivery.Services.ShoppingCartAPI.RabbitMQSender
         private IConnection _connection;
         private readonly IConfiguration _config;
 
-        public RabbitMQCartMessageSender()
+        public RabbitMQCartMessageSender(IConfiguration config)
         {
+            _config = config;
             _hostName = _config.GetValue<string>("RabbitMQ:HostName");
             _username = _config.GetValue<string>("RabbitMQ:User");
             _password = _config.GetValue<string>("RabbitMQ:Password");

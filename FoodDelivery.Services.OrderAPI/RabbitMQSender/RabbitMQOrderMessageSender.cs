@@ -15,8 +15,9 @@ namespace FoodDelivery.Services.OrderAPI.RabbitMQSender
         private const string OrderCreated_RewardsUpdateQueue = "RewardsUpdateQueue";
         private const string OrderCreated_EmailUpdateQueue = "EmailUpdateQueue";
 
-        public RabbitMQOrderMessageSender()
+        public RabbitMQOrderMessageSender(IConfiguration config)
         {
+            _config = config;
             _hostName = _config.GetValue<string>("RabbitMQ:HostName");
             _username = _config.GetValue<string>("RabbitMQ:User");
             _password = _config.GetValue<string>("RabbitMQ:Password");

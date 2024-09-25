@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FoodDelivery.Services.AuthAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class AuthAPI : Migration
+    public partial class UsersDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
