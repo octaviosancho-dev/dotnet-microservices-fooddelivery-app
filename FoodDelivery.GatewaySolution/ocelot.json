@@ -1,26 +1,12 @@
 {
   "Routes": [
-
-    {
-      "UpstreamPathTemplate": "/",
-      "DownstreamPathTemplate": "/",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "https://fooddelivery-web.onrender.com",
-          "Port": 10000
-        }
-      ],
-      "UpstreamHttpMethod": [ "GET" ]
-    },
-
     //"ProductAPI": "https://fooddelivery-services-productapi.onrender.com"
     {
       "DownstreamPathTemplate": "/api/product",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "https://fooddelivery-services-productapi.onrender.com",
-          "Port": 10000
+          "Host": "https://fooddelivery-services-productapi.onrender.com"
         }
       ],
       "UpstreamPathTemplate": "/api/product",
