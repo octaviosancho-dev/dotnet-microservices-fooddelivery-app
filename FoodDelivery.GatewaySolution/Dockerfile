@@ -1,22 +1,25 @@
-# Etapa 1: Construcción
+# Etapa de construcción
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
 WORKDIR /app
 
-# Copiar el archivo .csproj y restaurar dependencias
-COPY *.csproj ./
-RUN dotnet restore
+# Copiar el archivo .csproj específico y restaurar dependencias
+COPY ./FoodDelivery.GatewaySolution.csproj ./
+RUN dotnet restore "./FoodDelivery.GatewaySolution.csproj"
 
-# Copiar el resto de los archivos y construir la aplicación
-COPY . ./
+# Copiar todo el resto del código del microservicio
+COPY ./ ./
+
+# Compilar y publicar el código
+WORKDIR /app
 RUN dotnet publish -c Release -o out
 
-# Etapa 2: Imagen ligera de runtime
+# Etapa de runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build-env /app/out .
 
-# Exponer el puerto 80 (o el puerto donde escuche Ocelot)
-EXPOSE 80
+# Exponer puerto
+EXPOSE 7777
 
-# Comando de inicio
+# Ejecutar la aplicación
 ENTRYPOINT ["dotnet", "FoodDelivery.GatewaySolution.dll"]
