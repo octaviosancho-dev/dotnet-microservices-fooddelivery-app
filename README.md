@@ -72,6 +72,15 @@ Each appsettings.json file is configured for production by default. To run the a
 - Comment out the production URLs and uncomment the localhost URLs in the appsettings.json files for each service. For example, in FoodDelivery.Web:
 
 ```json
+"ConnectionStrings": {
+  "DefaultConnection": "Server=DESKTOP-KH8OVIA;Database=FoodDelivery_Auth;Trusted_Connection=True;TrustServerCertificate=True",
+  //"PostgreSqlConnection": "Host=dpg-crpkrt08fa8c73e3k4vg-a;Port=5432;Database=UsersDB;Username=fooddeliverydb_is4x_user;Password=jJkIG50sStqzrRzRLBu9fTGdIRZKiyCY;"
+  //"DEBUGGING":
+  "PostgreSqlConnection": "Host=dpg-crpkrt08fa8c73e3k4vg-a.oregon-postgres.render.com;Port=5432;Database=UsersDB;Username=fooddeliverydb_is4x_user;Password=jJkIG50sStqzrRzRLBu9fTGdIRZKiyCY;"
+}
+```
+
+```json
 "ServiceUrls": {
   //"AuthAPI": "https://fooddelivery-services-authapi.onrender.com",
   //"ProductAPI": "https://fooddelivery-gatewaysolution.onrender.com",
