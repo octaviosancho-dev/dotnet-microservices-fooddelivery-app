@@ -2,10 +2,10 @@
 
 #nullable disable
 
-namespace FoodDelivery.Services.CouponAPI.Migrations
+namespace FoodDelivery.Services.EmailAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class addIdentityTables : Migration
+    public partial class EmailDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

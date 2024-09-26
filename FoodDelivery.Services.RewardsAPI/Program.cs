@@ -8,11 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddDbContext<AppDbContext>(option =>
 {
-    option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    option.UseNpgsql(builder.Configuration.GetConnectionString("PostgreSqlConnection"));
 });
 
 var optionBuilder = new DbContextOptionsBuilder<AppDbContext>();
-optionBuilder.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+optionBuilder.UseNpgsql(builder.Configuration.GetConnectionString("PostgreSqlConnection"));
 builder.Services.AddSingleton(new RewardService(optionBuilder.Options));
 
 builder.Services.AddHostedService<RabbitMQOrderConsumer>();
