@@ -30,7 +30,8 @@ The application is built with independent microservices for each key functionali
 - **Shopping Cart Service**: Allows users to add, modify, and remove products from their cart.
 - **Emails Service**: Handles email notifications such as order confirmations and status updates.
 
-![image](https://github.com/user-attachments/assets/332e3d51-a293-487a-a24c-3248be3d21f6)
+![image](https://github.com/user-attachments/assets/11060686-43df-4c13-a93b-2b9b450f4f58)
+
 
 Each microservice is autonomous, with its own database and business logic. Communication between them is handled asynchronously using queues and topics with **RabbitMQ**.
 
