@@ -16,7 +16,8 @@
 
 **FoodDeliveryApp** provides a comprehensive solution for purchasing food products. Users can explore products, add them to the cart, complete purchases, and manage their orders. Each component of the application is handled by a specific microservice, enabling independent deployment and maintenance.
 
-![image](https://github.com/user-attachments/assets/c2935573-c298-4f28-8a08-e557b817b8c3)
+![image](https://github.com/user-attachments/assets/ca5f02b8-1ad0-4c36-9398-12a8504cd6cd)
+
 
 ## Architecture
 
